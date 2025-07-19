@@ -13,10 +13,10 @@
 #include <QListWidget>
 #include <QInputDialog>
 #include <QMessageBox>
-#include "rapidjson/document.h"
-#include "rapidjson/writer.h"
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/prettywriter.h"
+#include "libs/rapidjson/document.h"
+#include "libs/rapidjson/writer.h"
+#include "libs/rapidjson/stringbuffer.h"
+#include "libs/rapidjson/prettywriter.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), isConfirmState(false)
@@ -156,6 +156,7 @@ void MainWindow::refreshPokemonList()
     scrollArea->setWidget(containerWidget);
 
     setWindowTitle("Pokemon " + pokemonList.listName + " Checklist");
+    setWindowIcon(QIcon(":/logo.ico"));
 }
 
 void MainWindow::onEditListButtonClicked()

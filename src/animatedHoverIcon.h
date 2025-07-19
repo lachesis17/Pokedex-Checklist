@@ -36,7 +36,7 @@ private:
 };
 
 inline AnimatedHoverIcon::AnimatedHoverIcon(const QString &url, QWidget *parent)
-    : QLabel(parent), targetUrl(url), currentScale(0.85), currentOpacity(0.75), isPressed(false)
+    : QLabel(parent), targetUrl(url), currentScale(0.85), currentOpacity(0.95), isPressed(false)
 {
     setCursor(Qt::PointingHandCursor);
 
@@ -91,7 +91,7 @@ inline void AnimatedHoverIcon::leaveEvent(QEvent *event)
 
         opacityAnimation->stop();
         opacityAnimation->setStartValue(currentOpacity);
-        opacityAnimation->setEndValue(0.75);
+        opacityAnimation->setEndValue(0.95);
         opacityAnimation->start();
     }
     QLabel::leaveEvent(event);
@@ -139,7 +139,7 @@ inline void AnimatedHoverIcon::mouseReleaseEvent(QMouseEvent *event)
 
             opacityAnimation->stop();
             opacityAnimation->setStartValue(currentOpacity);
-            opacityAnimation->setEndValue(0.75);
+            opacityAnimation->setEndValue(0.95);
             opacityAnimation->start();
         }
     }

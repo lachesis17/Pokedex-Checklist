@@ -1,1 +1,32 @@
+#include <winver.h>
+
 IDI_ICON1 ICON "logo.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   0x3F
+FILEFLAGS       0
+FILEOS          0x40004
+FILETYPE        0x1
+FILESUBTYPE     0x0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",       "Lachesis17 AntonLF"
+            VALUE "FileDescription",   "Pokedex Checklist Qt Application"
+            VALUE "FileVersion",       "1.0.0.0"
+            VALUE "InternalName",      "PokedexChecklist"
+            VALUE "LegalCopyright",    "Copyright (C) 2025 Lachesis17 AntonLF"
+            VALUE "OriginalFilename",  "PokedexChecklist.exe"
+            VALUE "ProductName",       "Pokedex Checklist"
+            VALUE "ProductVersion",    "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1252
+    END
+END

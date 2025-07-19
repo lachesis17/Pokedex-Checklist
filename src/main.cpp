@@ -5,8 +5,8 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    app.setApplicationName("lachesis17's Pokédex Checklist");
-    app.setOrganizationName("Pokédex Checklist");
+    app.setApplicationName("lachesis17's Pokedex Checklist");
+    app.setOrganizationName("Pokedex Checklist");
 
     MainWindow window;
     window.show();
